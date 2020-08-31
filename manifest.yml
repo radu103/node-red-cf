@@ -1,0 +1,9 @@
+---
+applications:
+- name: my-node-red-cf
+  memory: 128M
+  command: node node_modules/node-red/red.js
+  env:
+     NODE_RED_USERNAME: admin
+     NODE_RED_PASSWORD: admin
+     NODE_RED_GUEST_ACCESS: true
